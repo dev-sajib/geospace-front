@@ -1,0 +1,202 @@
+{
+  "geologist": {
+    "title": "Geologists",
+    "singularTitle": "Geologist",
+    "description": "Hiring the top 5% of professional geologists involves a rigorous selection process to ensure the highest level of expertise, reliability, and efficiency.",
+    "topFreelancers": [
+      {
+        "name": "Maria Rodriguez",
+        "role": "Senior Geologist",
+        "previousCompany": "Teck",
+        "companyName": "Teck Resources Limited",
+        "image": "/images/Frame-112.png",
+        "isActive": false,
+        "serviceCategory": "Mining"
+      },
+      {
+        "name": "David Chen",
+        "role": "Professional Driller",
+        "previousCompany": "Rio Tinto",
+        "companyName": "Rio Tinto Group",
+        "image": "/images/Frame-114.png",
+        "isActive": false,
+        "serviceCategory": "Mining"
+      }
+    ]
+  },
+  "miner": {
+    "title": "Miners",
+    "singularTitle": "Miner",
+    "description": "Our selection process for miners ensures you get professionals with proven experience in safety, efficiency, and advanced mining techniques.",
+    "topFreelancers": [
+      {
+        "name": "Alex Johnson",
+        "role": "Lead Miner",
+        "previousCompany": "BHP",
+        "companyName": "BHP Group",
+        "image": "/images/Frame-112.png",
+        "isActive": false,
+        "serviceCategory": "Operations"
+      },
+      {
+        "name": "Ben Carter",
+        "role": "Underground Mining Specialist",
+        "previousCompany": "Glencore",
+        "companyName": "Glencore PLC",
+        "image": "/images/Frame-114.png",
+        "isActive": false,
+        "serviceCategory": "Operations"
+      }
+    ]
+  },
+  "engineer": {
+    "title": "Engineers",
+    "singularTitle": "Engineer",
+    "description": "Find top-tier engineers specialized in mining, petroleum, and environmental sectors, vetted for technical excellence and project management skills.",
+    "topFreelancers": [
+      {
+        "name": "Sophia Loren",
+        "role": "Mining Engineer",
+        "previousCompany": "Vale",
+        "companyName": "Vale S.A.",
+        "image": "/images/Frame-112.png",
+        "isActive": false,
+        "serviceCategory": "Engineering"
+      },
+      {
+        "name": "Chris Evans",
+        "role": "Petroleum Engineer",
+        "previousCompany": "ExxonMobil",
+        "companyName": "ExxonMobil Corporation",
+        "image": "/images/Frame-114.png",
+        "isActive": false,
+        "serviceCategory": "Petroleum"
+      }
+    ]
+  },
+  "electrician": {
+    "title": "Electricians",
+    "singularTitle": "Electrician",
+    "description": "Hire certified electricians with specialized experience in industrial and mining electrical systems, ensuring safety and reliability.",
+    "topFreelancers": [
+      {
+        "name": "Mike Volt",
+        "role": "Industrial Electrician",
+        "previousCompany": "Siemens",
+        "companyName": "Siemens AG",
+        "image": "/images/Frame-112.png",
+        "isActive": false,
+        "serviceCategory": "Maintenance"
+      },
+      {
+        "name": "Laura Circuit",
+        "role": "Mining Electrical Engineer",
+        "previousCompany": "ABB",
+        "companyName": "ABB Group",
+        "image": "/images/Frame-114.png",
+        "isActive": false,
+        "serviceCategory": "Engineering"
+      }
+    ]
+  },
+  "environmental-specialist": {
+    "title": "Environmental Specialists",
+    "singularTitle": "Environmental Specialist",
+    "description": "Access top environmental specialists for impact assessments, compliance, and sustainable resource management.",
+    "topFreelancers": [
+      {
+        "name": "Dr. Susan Fields",
+        "role": "Lead Environmental Analyst",
+        "previousCompany": "AECOM",
+        "companyName": "AECOM Inc.",
+        "image": "/images/Frame-112.png",
+        "isActive": false,
+        "serviceCategory": "Environmental"
+      },
+      {
+        "name": "Tom Harris",
+        "role": "Compliance Manager",
+        "previousCompany": "WSP Global",
+        "companyName": "WSP Global Inc.",
+        "image": "/images/Frame-114.png",
+        "isActive": false,
+        "serviceCategory": "Compliance"
+      }
+    ]
+  },
+  "data-specialist": {
+    "title": "Data Specialists",
+    "singularTitle": "Data Specialist",
+    "description": "Leverage the expertise of data specialists to analyze geological data, optimize operations, and drive data-informed decisions.",
+    "topFreelancers": [
+      {
+        "name": "Priya Singh",
+        "role": "Geological Data Scientist",
+        "previousCompany": "Palantir",
+        "companyName": "Palantir Technologies",
+        "image": "/images/Frame-112.png",
+        "isActive": false,
+        "serviceCategory": "Data Science"
+      },
+      {
+        "name": "Kenji Tanaka",
+        "role": "Resource Modeling Specialist",
+        "previousCompany": "Dassault Systèmes",
+        "companyName": "Dassault Systèmes SE",
+        "image": "/images/Frame-114.png",
+        "isActive": false,
+        "serviceCategory": "Modeling"
+      }
+    ]
+  },
+  "professional-driller": {
+    "title": "Professional Drillers",
+    "singularTitle": "Professional Driller",
+    "description": "Our network includes highly skilled professional drillers with expertise in various drilling techniques and geological formations.",
+    "topFreelancers": [
+      {
+        "name": "William Riggs",
+        "role": "Directional Driller",
+        "previousCompany": "Schlumberger",
+        "companyName": "Schlumberger Limited",
+        "image": "/images/Frame-112.png",
+        "isActive": false,
+        "serviceCategory": "Drilling"
+      },
+      {
+        "name": "Jessica Jones",
+        "role": "Exploration Driller",
+        "previousCompany": "Boart Longyear",
+        "companyName": "Boart Longyear Ltd.",
+        "image": "/images/Frame-114.png",
+        "isActive": false,
+        "serviceCategory": "Exploration"
+      }
+    ]
+  },
+  "petroleum-expert": {
+    "title": "Petroleum Experts",
+    "singularTitle": "Petroleum Expert",
+    "description": "Engage elite petroleum experts for exploration, reservoir engineering, and production optimization projects.",
+    "topFreelancers": [
+      {
+        "name": "Dr. Peter Venn",
+        "role": "Reservoir Engineer",
+        "previousCompany": "Halliburton",
+        "companyName": "Halliburton Company",
+        "image": "/images/Frame-112.png",
+        "isActive": false,
+        "serviceCategory": "Petroleum"
+      },
+      {
+        "name": "Fatima Al-Jamil",
+        "role": "Petroleum Geologist",
+        "previousCompany": "Saudi Aramco",
+        "companyName": "Saudi Arabian Oil Company",
+        "image": "/images/Frame-114.png",
+        "isActive": false,
+        "serviceCategory": "Petroleum"
+      }
+    ]
+  }
+}

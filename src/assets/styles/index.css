@@ -1,0 +1,162 @@
+@import "tailwindcss";
+
+/* Global Font Styles */
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+/* Heading Styles - Poppins Medium */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Paragraph Styles - Poppins Regular */
+p {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Button Styles */
+button {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Input Styles */
+input,
+textarea,
+select {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Custom Container Width */
+.max-w-container {
+    max-width: 1508px;
+}
+
+.line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.line-clamp-4 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.smooth-transition {
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 640px) {
+    h1,
+    h2,
+    h3 {
+        word-wrap: break-word;
+        hyphens: auto;
+    }
+
+    * {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    button {
+        min-height: 44px;
+        min-width: 44px;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .responsive-image {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+:root {
+    --color-emerald-600: #0B8468 !important;
+    --color-emerald-100: #0B8468 !important;
+    --color-emerald-200: #0B8468 !important;
+    --color-emerald-300: #0B8468 !important;
+    --color-emerald-400: #0B8468 !important;
+    --color-emerald-500: #0B8468 !important;
+    --color-emerald-700: #0B8468 !important;
+    --color-emerald-800: #0B8468 !important;
+    --color-emerald-900: #0B8468 !important;
+    --color-emerald-1000: #0B8468 !important;
+}
+
+/*.freelancer-carousel .swiper-wrapper{*/
+/*    padding: 40px 20px;*/
+/*}*/
+/*.custom-boxshadow{*/
+/*    box-shadow: 2px 5px 50px rgb(0 0 0 / 0.10);*/
+/*}*/
+
+/* global front setup  */
+.g-h1{
+    font-size: 60px !important;
+    line-height: 1.3em !important;
+    font-weight: 600 !important; /*semi-bold*/
+}
+.g-h2{
+    font-size: 48px !important;
+    line-height: 1.4em !important;
+    font-weight: 500 !important;/*medium*/
+}
+.g-p2{
+    font-size: 20px !important;
+    line-height: 1.5em !important;
+    font-weight: 400 !important;/*normal*/
+}
+.g-title{
+    font-size: 20px !important;
+    line-height: 1.5em !important;
+    font-weight: 500 !important;/*medium*/
+}
+.g-15{
+    font-size: 15px !important;
+    line-height: 1.5em !important;
+    font-weight: 400 !important;/*medium*/
+}
+/* global front setup end */
