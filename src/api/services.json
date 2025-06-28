@@ -1,0 +1,58 @@
+[
+  {
+    "id": "electrician",
+    "name": "Electrician",
+    "icon": {
+      "src": "/svg/electrician.svg",
+      "alt": "Electrician"
+    }
+  },
+  {
+    "id": "environment-specialist",
+    "name": "Environment Specialist",
+    "icon": {
+      "src": "/svg/env-sp.svg",
+      "alt": "Environment Specialist"
+    }
+  },
+  {
+    "id": "petroleum-expert",
+    "name": "Petroleum Expert",
+    "icon": {
+      "src": "/svg/petroleum.svg",
+      "alt": "Petroleum Expert"
+    }
+  },
+  {
+    "id": "technician",
+    "name": "Technician",
+    "icon": {
+      "src": "/svg/technician.svg",
+      "alt": "Technician"
+    }
+  },
+  {
+    "id": "miner",
+    "name": "Miner",
+    "icon": {
+      "src": "/svg/miner.svg",
+      "alt": "Miner"
+    }
+  },
+  {
+    "id": "engineer",
+    "name": "Engineer",
+    "icon": {
+      "src": "/svg/engineer.svg",
+      "alt": "Engineer"
+    }
+  },
+  {
+    "id": "geologist",
+    "name": "Geologist",
+    "icon": {
+      "src": "/svg/geologist.svg",
+      "alt": "Geologist"
+    }
+  }
+]

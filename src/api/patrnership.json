@@ -1,0 +1,32 @@
+[
+  {
+    "name": "OGQ & GeoEspace",
+    "subtitle": "Ordre des géologues du Québec",
+    "logo": "/svg/brands3.svg"
+  },
+  {
+    "name": "AEMQ & GeoEspace",
+    "subtitle": "Association de l'exploration minière du Québec",
+    "logo": "/svg/brands4.svg"
+  },
+  {
+    "name": "WallBridge & GeoEspace",
+    "subtitle": "WallBridge Mining Company",
+    "logo": "/svg/brands5.svg"
+  },
+  {
+    "name": "Mining Solutions & GeoEspace",
+    "subtitle": "Professional Mining Services",
+    "logo": "/svg/brands3.svg"
+  },
+  {
+    "name": "GeoTech & GeoEspace",
+    "subtitle": "Geological Technology Partners",
+    "logo": "/svg/brands4.svg"
+  },
+  {
+    "name": "EarthSci & GeoEspace",
+    "subtitle": "Earth Sciences Institute",
+    "logo": "/svg/brands5.svg"
+  }
+]

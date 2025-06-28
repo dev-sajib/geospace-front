@@ -8,7 +8,7 @@ import Main_Layout from "../layouts/Main_Layout";
 // import Protected_Route from "./Protected_Route";
 // import Role_Based_Route from "./Role_Based_Route";
 
-import Home_Page from "../pages/website/Home_Page";
+import Home_Page from "../pages/website/Home/Home_Page";
 // import Login_Page from "../pages/auth/Login_Page";
 // import Signup_Page from "../pages/auth/Signup_Page";
 

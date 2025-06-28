@@ -1,0 +1,212 @@
+[
+  {
+    "name": "Ric Saltzman",
+    "servicesID": "electrician",
+    "serviceCategory": "Electrician",
+    "role": "Industrial Electrician",
+    "previousCompany": "Teck",
+    "companyName": "Teck Resources Limited",
+    "image": "/images/Frame-112.png",
+    "profileLink": "#"
+  },
+  {
+    "name": "Michael Thompson",
+    "servicesID": "electrician",
+    "serviceCategory": "Electrician",
+    "role": "Electrical Supervisor",
+    "previousCompany": "Freeport",
+    "companyName": "Freeport-McMoRan Inc.",
+    "image": "/images/Frame-113.png",
+    "profileLink": "#"
+  },
+  {
+    "name": "Carlos Rodriguez",
+    "servicesID": "electrician",
+    "serviceCategory": "Electrician",
+    "role": "Power Systems Electrician",
+    "previousCompany": "BHP",
+    "companyName": "BHP Group Limited",
+    "image": "/images/Frame-112.png",
+    "profileLink": "#"
+  },
+  {
+    "name": "Maria Rodriguez",
+    "servicesID": "environment-specialist",
+    "serviceCategory": "Environment Specialist",
+    "role": "Environmental Specialist",
+    "previousCompany": "Barrick",
+    "companyName": "Barrick Gold Corporation",
+    "image": "/images/Frame-113.png",
+    "profileLink": "#"
+  },
+  {
+    "name": "Dr. Amanda Foster",
+    "servicesID": "environment-specialist",
+    "serviceCategory": "Environment Specialist",
+    "role": "Environmental Impact Assessor",
+    "previousCompany": "Anglo American",
+    "companyName": "Anglo American plc",
+    "image": "/images/Frame-114.png",
+    "profileLink": "#"
+  },
+  {
+    "name": "Robert Kim",
+    "servicesID": "environment-specialist",
+    "serviceCategory": "Environment Specialist",
+    "role": "Sustainability Consultant",
+    "previousCompany": "Glencore",
+    "companyName": "Glencore International AG",
+    "image": "/images/Frame-112.png",
+    "profileLink": "#"
+  },
+  {
+    "name": "Henery Marcel",
+    "servicesID": "petroleum-expert",
+    "serviceCategory": "Petroleum Expert",
+    "role": "Petroleum Expert",
+    "previousCompany": "Vale",
+    "companyName": "Vale S.A.",
+    "image": "/images/Frame-114.png",
+    "profileLink": "#"
+  },
+  {
+    "name": "Dr. Lisa Chen",
+    "servicesID": "petroleum-expert",
+    "serviceCategory": "Petroleum Expert",
+    "role": "Reservoir Engineer",
+    "previousCompany": "Kinross",
+    "companyName": "Kinross Gold Corporation",
+    "image": "/images/Frame-112.png",
+    "profileLink": "#"
+  },
+  {
+    "name": "James Wilson",
+    "servicesID": "petroleum-expert",
+    "serviceCategory": "Petroleum Expert",
+    "role": "Petroleum Geoscientist",
+    "previousCompany": "Yamana Gold",
+    "companyName": "Yamana Gold Inc.",
+    "image": "/images/Frame-112.png",
+    "profileLink": "#"
+  },
+  {
+    "name": "Sarah Johnson",
+    "servicesID": "technician",
+    "serviceCategory": "Technician",
+    "role": "Maintenance Technician",
+    "previousCompany": "Newmont",
+    "companyName": "Newmont Corporation",
+    "image": "/images/Frame-114.png",
+    "profileLink": "#"
+  },
+  {
+    "name": "Ahmed Hassan",
+    "servicesID": "technician",
+    "serviceCategory": "Technician",
+    "role": "Equipment Technician",
+    "previousCompany": "ExxonMobil",
+    "companyName": "Exxon Mobil Corporation",
+    "image": "/images/Frame-113.png",
+    "profileLink": "#"
+  },
+  {
+    "name": "Elena Petrov",
+    "servicesID": "technician",
+    "serviceCategory": "Technician",
+    "role": "Field Service Technician",
+    "previousCompany": "Shell",
+    "companyName": "Royal Dutch Shell",
+    "image": "/images/Frame-114.png",
+    "profileLink": "#"
+  },
+  {
+    "name": "David Chen",
+    "servicesID": "miner",
+    "serviceCategory": "Miner",
+    "role": "Underground Miner",
+    "previousCompany": "Rio Tinto",
+    "companyName": "Rio Tinto Group",
+    "image": "/images/Frame-113.png",
+    "profileLink": "#"
+  },
+  {
+    "name": "Marcus Williams",
+    "servicesID": "miner",
+    "serviceCategory": "Miner",
+    "role": "Surface Miner",
+    "previousCompany": "Halliburton",
+    "companyName": "Halliburton Company",
+    "image": "/images/Frame-114.png",
+    "profileLink": "#"
+  },
+  {
+    "name": "Jennifer Martinez",
+    "servicesID": "miner",
+    "serviceCategory": "Miner",
+    "role": "Mining Specialist",
+    "previousCompany": "Schlumberger",
+    "companyName": "Schlumberger Limited",
+    "image": "/images/Frame-112.png",
+    "profileLink": "#"
+  },
+  {
+    "name": "Thomas Anderson",
+    "servicesID": "engineer",
+    "serviceCategory": "Engineer",
+    "role": "Mining Engineer",
+    "previousCompany": "Caterpillar",
+    "companyName": "Caterpillar Inc.",
+    "image": "/images/Frame-113.png",
+    "profileLink": "#"
+  },
+  {
+    "name": "Rachel Green",
+    "servicesID": "engineer",
+    "serviceCategory": "Engineer",
+    "role": "Process Engineer",
+    "previousCompany": "Komatsu",
+    "companyName": "Komatsu Ltd.",
+    "image": "/images/Frame-114.png",
+    "profileLink": "#"
+  },
+  {
+    "name": "Alexander Volkov",
+    "servicesID": "engineer",
+    "serviceCategory": "Engineer",
+    "role": "Mechanical Engineer",
+    "previousCompany": "Sandvik",
+    "companyName": "Sandvik AB",
+    "image": "/images/Frame-112.png",
+    "profileLink": "#"
+  },
+  {
+    "name": "Dr. Patricia Lee",
+    "servicesID": "geologist",
+    "serviceCategory": "Geologist",
+    "role": "Senior Geologist",
+    "previousCompany": "Newcrest",
+    "companyName": "Newcrest Mining Limited",
+    "image": "/images/Frame-113.png",
+    "profileLink": "#"
+  },
+  {
+    "name": "Miguel Santos",
+    "servicesID": "geologist",
+    "serviceCategory": "Geologist",
+    "role": "Exploration Geologist",
+    "previousCompany": "Agnico Eagle",
+    "companyName": "Agnico Eagle Mines Limited",
+    "image": "/images/Frame-114.png",
+    "profileLink": "#"
+  },
+  {
+    "name": "Sophie Turner",
+    "servicesID": "geologist",
+    "serviceCategory": "Geologist",
+    "role": "Structural Geologist",
+    "previousCompany": "Gold Fields",
+    "companyName": "Gold Fields Limited",
+    "image": "/images/Frame-112.png",
+    "profileLink": "#"
+  }
+]
