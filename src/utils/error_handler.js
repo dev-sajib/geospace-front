@@ -22,3 +22,13 @@ export const CommonErrorHandler = (error) => {
 
   return errorMessage;
 };
+
+export const SilentErrorHandler = (
+  error,
+  contextMessage = "API call failed"
+) => {
+  console.error(
+    `[${contextMessage}]:`,
+    error.response || error.message || error
+  );
+};
