@@ -15,7 +15,7 @@ export const ROUTE_PATHS = {
 
   FREELANCER_DASHBOARD: "/freelancer/dashboard",
   COMPANY_DASHBOARD: "/company/dashboard",
-  ADMIN_DASHBOARD: "/admin/dashboard",
+  ADMIN_DASHBOARD: "/admin/active-users",
 
   PRIVACY_POLICY: "/privacy-policy",
   TERMS_CONDITIONS: "/terms-conditions",

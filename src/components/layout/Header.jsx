@@ -1,19 +1,33 @@
 import { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { Menu, X } from "lucide-react";
 import talentData from "../../api/talentData.json";
+
+const navLinks = [
+  { path: "/top-5", label: "Top 5%" },
+  { path: "/consulting-services", label: "Consulting & Service" },
+  { path: "/clients", label: "Clients" },
+  { path: "/blog", label: "Blog" },
+  { path: "/about", label: "About Us" },
+];
+
+const actionLinks = [
+  { path: "/apply-freelancer", label: "Apply as a Freelancer", type: "link" },
+  { path: "/hire-top-talent", label: "Hire Top Talent", type: "button" },
+  { path: "/login", label: "Log In", type: "link" },
+];
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
-
-  const handleLogoClick = () => {
+  const handleLinkClick = (isDropdownLink = false) => {
     window.scrollTo(0, 0);
     setIsMobileMenuOpen(false);
+    if (isDropdownLink) {
+      setIsDropdownOpen(false);
+    }
   };
 
   useEffect(() => {
@@ -22,43 +36,55 @@ const Header = () => {
         setIsDropdownOpen(false);
       }
     };
-
     document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
+  const hireTalentLinks = [
+    ...Object.keys(talentData).map((key) => ({
+      path: `/hire/${key}`,
+      label: talentData[key].singularTitle,
+    })),
+    { path: "/hire-team", label: "Hire a Team" },
+  ];
+
+  const ActionButton = ({ to, children, className }) => (
+    <Link to={to} onClick={() => handleLinkClick()} className={className}>
+      {children}
+    </Link>
+  );
 
   return (
     <header className="bg-white border-b border-gray-100 sticky top-0 z-50">
       <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex-shrink-0">
-            <Link
-              to="/"
-              className="flex items-center"
-              onClick={handleLogoClick}
-            >
-              <img
-                src="/images/logo.png"
-                alt="GeoEspace"
-                className="object-contain"
-                style={{ width: "240px", height: "40px" }}
-              />
-            </Link>
-          </div>
+          <Link
+            to="/"
+            onClick={() => handleLinkClick()}
+            className="flex-shrink-0"
+          >
+            <img
+              src="/images/logo.png"
+              alt="GeoEspace"
+              className="h-10 w-60 object-contain"
+            />
+          </Link>
 
           <nav className="hidden lg:flex items-center space-x-6">
-            <Link
+            <NavLink
               to="/top-5"
-              className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-200 whitespace-nowrap text-sm"
+              className="text-sm font-medium text-gray-700 hover:text-emerald-600"
             >
               Top 5%
-            </Link>
-            <div className="relative group" ref={dropdownRef}>
+            </NavLink>
+            <div
+              className="relative"
+              ref={dropdownRef}
+              onMouseLeave={() => setIsDropdownOpen(false)}
+            >
               <button
-                className="text-gray-700 hover:text-emerald-600 font-medium flex items-center transition-colors duration-200 whitespace-nowrap text-sm"
-                onMouseEnter={() => setIsDropdownOpen(!isDropdownOpen)}
+                onMouseEnter={() => setIsDropdownOpen(true)}
+                className="text-sm font-medium text-gray-700 hover:text-emerald-600 flex items-center"
               >
                 Hire Talent
                 <svg
@@ -75,179 +101,118 @@ const Header = () => {
                   />
                 </svg>
               </button>
-
               {isDropdownOpen && (
-                <div
-                  className="absolute top-full left-0 mt-1 w-56 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50"
-                  onMouseLeave={() => setIsDropdownOpen(false)}
-                >
-                  {Object.keys(talentData).map((roleKey, index) => {
-                    const role = talentData[roleKey];
-                    return (
-                      <Link
-                        key={roleKey}
-                        to={`/hire/${roleKey}`}
-                        className={`block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-emerald-600 transition-colors duration-200 ${
-                          index === 0 ? "rounded-t-lg" : ""
-                        }`}
-                        onClick={() => setIsDropdownOpen(false)}
-                      >
-                        {role.singularTitle}
-                      </Link>
-                    );
-                  })}
-
-                  <Link
-                    to="/hire-team"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-emerald-600 transition-colors duration-200 rounded-b-lg"
-                    onClick={() => setIsDropdownOpen(false)}
-                  >
-                    Hire a Team
-                  </Link>
+                <div className="absolute top-full left-0 mt-1 w-56 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
+                  {hireTalentLinks.map((link) => (
+                    <Link
+                      key={link.path}
+                      to={link.path}
+                      onClick={() => handleLinkClick(true)}
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-emerald-600"
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
                 </div>
               )}
             </div>
-            <Link
-              to="/consulting-services"
-              className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-200 whitespace-nowrap text-sm"
-            >
-              Consulting & Service
-            </Link>
-            <Link
-              to="/clients"
-              className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-200 whitespace-nowrap text-sm"
-            >
-              Clients
-            </Link>
-            <Link
-              to="/blog"
-              className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-200 whitespace-nowrap text-sm"
-            >
-              Blog
-            </Link>
-            <Link
-              to="/about"
-              className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-200 whitespace-nowrap text-sm"
-            >
-              About Us
-            </Link>
+            {navLinks.slice(1).map((link) => (
+              <NavLink
+                key={link.path}
+                to={link.path}
+                className="text-sm font-medium text-gray-700 hover:text-emerald-600"
+              >
+                {link.label}
+              </NavLink>
+            ))}
           </nav>
 
           <div className="hidden lg:flex items-center space-x-3">
-            <a
-              href="#"
-              className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-200 whitespace-nowrap text-sm"
+            <ActionButton
+              to="/apply-freelancer"
+              className="text-sm font-medium text-gray-700 hover:text-emerald-600"
             >
               Apply as a Freelancer
-            </a>
-            <button className="bg-[#0B8468] text-white px-4 py-2 rounded-lg font-medium hover:bg-emerald-700 transition-colors duration-200 whitespace-nowrap text-sm">
+            </ActionButton>
+            <ActionButton
+              to="/hire-top-talent"
+              className="bg-[#0B8468] text-white px-4 py-2 rounded-lg font-medium hover:bg-emerald-700 text-sm"
+            >
               Hire Top Talent
-            </button>
-            <button className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-200 whitespace-nowrap text-sm">
+            </ActionButton>
+            <ActionButton
+              to="/login"
+              className="text-sm font-medium text-gray-700 hover:text-emerald-600"
+            >
               Log In
-            </button>
+            </ActionButton>
           </div>
 
           <div className="lg:hidden">
-            <button
-              onClick={toggleMobileMenu}
-              className="text-gray-700 hover:text-emerald-600 transition-colors duration-200 p-2"
-              aria-label="Toggle mobile menu"
-            >
-              <svg
-                className={`h-6 w-6 transition-transform duration-300 ${
-                  isMobileMenuOpen ? "rotate-90" : ""
-                }`}
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                {isMobileMenuOpen ? (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                ) : (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                )}
-              </svg>
+            <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+              {isMobileMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </button>
           </div>
         </div>
 
-        <div
-          className={`lg:hidden transition-all duration-300 ease-in-out ${
-            isMobileMenuOpen
-              ? "max-h-96 opacity-100 visible"
-              : "max-h-0 opacity-0 invisible overflow-hidden"
-          }`}
-        >
-          <div className="px-2 pt-2 pb-6 space-y-1 bg-white border-t border-gray-100">
-            <Link
-              to="/top-5"
-              className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-gray-50 rounded-md transition-colors duration-200"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Top 5%
-            </Link>
-            <a
-              href="#"
-              className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-gray-50 rounded-md transition-colors duration-200"
-            >
-              Hire Talent
-            </a>
-            <Link
-              to="/consulting-services"
-              className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-gray-50 rounded-md transition-colors duration-200"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Consulting & Service
-            </Link>
-            <Link
-              to="/clients"
-              className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-gray-50 rounded-md transition-colors duration-200"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Clients
-            </Link>
-            <Link
-              to="/blog"
-              className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-gray-50 rounded-md transition-colors duration-200"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Blog
-            </Link>
-            <Link
-              to="/about"
-              className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-gray-50 rounded-md transition-colors duration-200"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              About Us
-            </Link>
-
-            <div className="pt-4 space-y-3 border-t border-gray-200">
-              <a
-                href="#"
-                className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-gray-50 rounded-md transition-colors duration-200"
+        {isMobileMenuOpen && (
+          <div className="lg:hidden transition-all duration-300 ease-in-out">
+            <div className="px-2 pt-2 pb-6 space-y-1 bg-white border-t border-gray-100">
+              <NavLink
+                to="/top-5"
+                onClick={() => handleLinkClick()}
+                className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-md"
               >
-                Apply as a Freelancer
-              </a>
-              <button className="w-full text-left bg-[#0B8468] text-white px-3 py-2 rounded-lg font-medium hover:bg-emerald-700 transition-colors duration-200">
-                Hire Top Talent
-              </button>
-              <button className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-gray-50 rounded-md transition-colors duration-200">
-                Log In
-              </button>
+                Top 5%
+              </NavLink>
+              <div className="block px-3 py-2 text-base font-medium text-gray-700">
+                Hire Talent
+              </div>
+              <div className="pl-3">
+                {hireTalentLinks.map((link) => (
+                  <Link
+                    key={link.path}
+                    to={link.path}
+                    onClick={() => handleLinkClick(true)}
+                    className="block px-3 py-2 text-base font-medium text-gray-600 hover:bg-gray-50 rounded-md"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+              {navLinks.slice(1).map((link) => (
+                <NavLink
+                  key={link.path}
+                  to={link.path}
+                  onClick={() => handleLinkClick()}
+                  className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-md"
+                >
+                  {link.label}
+                </NavLink>
+              ))}
+              <div className="pt-4 space-y-3 border-t border-gray-200">
+                {actionLinks.map((link) => (
+                  <Link
+                    key={link.path}
+                    to={link.path}
+                    onClick={() => handleLinkClick()}
+                    className={`block w-full text-left px-3 py-2 rounded-lg font-medium text-base ${
+                      link.type === "button"
+                        ? "bg-[#0B8468] text-white hover:bg-emerald-700"
+                        : "text-gray-700 hover:bg-gray-50"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
+        )}
       </div>
     </header>
   );
