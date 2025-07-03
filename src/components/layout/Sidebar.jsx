@@ -2,11 +2,8 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { useSelector } from "react-redux";
 import { NavLink, useLocation } from "react-router-dom";
-import {
-  CommonErrorHandler,
-  SilentErrorHandler,
-} from "../../utils/error_handler";
 import { getMenusByRoleId } from "../../api/menu_sidebar_service";
+import { SilentErrorHandler } from "../../utils/error_handler";
 
 const Sidebar = () => {
   const { user } = useSelector((state) => state.auth);
