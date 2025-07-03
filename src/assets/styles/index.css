@@ -1,42 +1,6 @@
+@import url('./font.css');
 @import "tailwindcss";
 
-/* Global Font Styles */
-* {
-    font-family: "Poppins", sans-serif;
-}
-
-body {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    overflow-x: hidden;
-}
-
-/* Heading Styles - Poppins Medium */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Poppins", sans-serif;
-}
-
-/* Paragraph Styles - Poppins Regular */
-p {
-    font-family: "Poppins", sans-serif;
-}
-
-/* Button Styles */
-button {
-    font-family: "Poppins", sans-serif;
-}
-
-/* Input Styles */
-input,
-textarea,
-select {
-    font-family: "Poppins", sans-serif;
-}
 
 /* Custom Container Width */
 .max-w-container {
@@ -126,37 +90,13 @@ button {
     --color-emerald-1000: #0B8468 !important;
 }
 
-/*.freelancer-carousel .swiper-wrapper{*/
-/*    padding: 40px 20px;*/
-/*}*/
-/*.custom-boxshadow{*/
-/*    box-shadow: 2px 5px 50px rgb(0 0 0 / 0.10);*/
-/*}*/
-
-/* global front setup  */
-.g-h1{
-    font-size: 60px !important;
-    line-height: 1.3em !important;
-    font-weight: 600 !important; /*semi-bold*/
+.g-pt-140{
+    padding-top: calc(3.75rem + ((1vw - 4.2px) * 5.3333)) !important;
 }
-.g-h2{
-    font-size: 48px !important;
-    line-height: 1.4em !important;
-    font-weight: 500 !important;/*medium*/
+.g-pb-140 {
+    padding-bottom: calc(3.75rem + ((1vw - 4.2px) * 5.3333)) !important;
 }
-.g-p2{
-    font-size: 20px !important;
-    line-height: 1.5em !important;
-    font-weight: 400 !important;/*normal*/
+.g-w-80-h-80{
+    width: calc(2.5rem + ((1vw - 4.2px) * 2.6667));
+    height: calc(2.5rem + ((1vw - 4.2px) * 2.6667));
 }
-.g-title{
-    font-size: 20px !important;
-    line-height: 1.5em !important;
-    font-weight: 500 !important;/*medium*/
-}
-.g-15{
-    font-size: 15px !important;
-    line-height: 1.5em !important;
-    font-weight: 400 !important;/*medium*/
-}
-/* global front setup end */

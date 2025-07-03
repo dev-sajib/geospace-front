@@ -1,15 +1,18 @@
-import { FaChevronLeft, FaChevronRight, FaStar } from "react-icons/fa";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+
+import { FaStar, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 const TestimonialCard = ({ quote, author, position, company, rating }) => {
   return (
     <div className="bg-white rounded-xl p-4 sm:p-6 lg:p-8 h-full">
       <div className="text-4xl sm:text-5xl lg:text-6xl text-emerald-400 font-serif mb-3 sm:mb-4">
-        <img src="/SVG/quotation.svg" alt="" className="h-[32px]" />
+        <img src="/SVG/quotation.svg" alt=""  className="h-[32px]"/>
       </div>
 
       <span className="text-gray-700 text-[18px]  pb-[24px] block">
@@ -83,7 +86,7 @@ const ClientSatisfaction = ({
   ];
 
   return (
-    <section className={`py-12 sm:py-16 lg:pb-[140px] ${bgColor}`}>
+    <section className={` g-pb-140 g-pt-140 ${bgColor}`}>
       <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="g-h2 text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
@@ -104,74 +107,74 @@ const ClientSatisfaction = ({
           </p>
         </div>
         <div className="bg-gradient-to-br from-teal-50 to-emerald-50 rounded-[20px] lg:rounded-[20px] p-8 lg:p-[40px] relative overflow-hidden">
-          <div className="relative">
-            <Swiper
-              modules={[Navigation, Pagination, Autoplay]}
-              spaceBetween={20}
-              slidesPerView={1}
-              slidesPerGroup={1}
-              navigation={{
-                prevEl: ".swiper-button-prev-custom",
-                nextEl: ".swiper-button-next-custom",
-              }}
-              pagination={{
-                clickable: true,
-                bulletClass: "swiper-pagination-bullet-custom",
-                bulletActiveClass: "swiper-pagination-bullet-active-custom",
-              }}
-              loop={true}
-              autoplay={{
-                delay: 5000,
-                disableOnInteraction: false,
-              }}
-              breakpoints={{
-                640: {
-                  slidesPerView: 1,
-                  slidesPerGroup: 1,
-                  spaceBetween: 24,
-                },
-                1024: {
-                  slidesPerView: 2,
-                  slidesPerGroup: 2,
-                  spaceBetween: 32,
-                },
-              }}
-              className="testimonial-swiper"
-            >
-              {testimonials.map((testimonial, index) => (
-                <SwiperSlide key={index}>
-                  <TestimonialCard {...testimonial} />
-                </SwiperSlide>
-              ))}
-            </Swiper>
+          
+        <div className="relative" >
+          <Swiper
+            modules={[Navigation, Pagination, Autoplay]}
+            spaceBetween={20}
+            slidesPerView={1}
+            speed={600}
+            navigation={{
+              prevEl: '.swiper-button-prev-custom',
+              nextEl: '.swiper-button-next-custom',
+            }}
+            pagination={{
+              clickable: true,
+              bulletClass: 'swiper-pagination-bullet-custom',
+              bulletActiveClass: 'swiper-pagination-bullet-active-custom',
+            }}
+            loop={true}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 24,
+              },
+              1024: {
+                slidesPerView: 2,
+                spaceBetween: 32,
+              },
+            }}
+            className="testimonial-swiper"
+          >
+            {testimonials.map((testimonial, index) => (
+              <SwiperSlide key={index}>
+                <TestimonialCard {...testimonial} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
 
-            {/* Custom Navigation Buttons */}
-            <button className="swiper-button-prev-custom hidden sm:flex absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 lg:w-12 lg:h-12 bg-white border border-emerald-600 hover:text-white hover:bg-emerald-600 rounded-full items-center justify-center  transition-all duration-200 shadow-sm">
-              <FaChevronLeft className="" />
+          {/* Custom Navigation Buttons */}
+          <button className="swiper-button-prev-custom hidden sm:flex absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 lg:w-12 lg:h-12 bg-white border border-emerald-600 hover:text-white hover:bg-emerald-600 rounded-full items-center justify-center  transition-all duration-200 shadow-sm">
+            <FaChevronLeft className="" />
+          </button>
+
+          <button className="swiper-button-next-custom hidden sm:flex absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 lg:w-12 lg:h-12 bg-white border border-emerald-600 hover:bg-emerald-600 rounded-full items-center justify-center hover:text-white transition-all duration-200 shadow-sm">
+            <FaChevronRight className="" />
+          </button>
+
+          {/* Mobile Navigation */}
+          <div className="flex justify-center space-x-4 mt-6 sm:hidden">
+            <button className="swiper-button-prev-custom flex items-center justify-center w-10 h-10 bg-white border border-gray-200 rounded-full transition-all duration-200 shadow-sm hover:bg-gray-50">
+              <FaChevronLeft className="w-4 h-4 text-emerald-600" />
             </button>
-
-            <button className="swiper-button-next-custom hidden sm:flex absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 lg:w-12 lg:h-12 bg-white border border-emerald-600 hover:bg-emerald-600 rounded-full items-center justify-center hover:text-white transition-all duration-200 shadow-sm">
-              <FaChevronRight className="" />
+            <button className="swiper-button-next-custom flex items-center justify-center w-10 h-10 bg-white border border-gray-200 rounded-full transition-all duration-200 shadow-sm hover:bg-gray-50">
+              <FaChevronRight className="w-4 h-4 text-emerald-600" />
             </button>
-
-            {/* Mobile Navigation */}
-            <div className="flex justify-center space-x-4 mt-6 sm:hidden">
-              <button className="swiper-button-prev-custom flex items-center justify-center w-10 h-10 bg-white border border-gray-200 rounded-full transition-all duration-200 shadow-sm hover:bg-gray-50">
-                <FaChevronLeft className="w-4 h-4 text-emerald-600" />
-              </button>
-              <button className="swiper-button-next-custom flex items-center justify-center w-10 h-10 bg-white border border-gray-200 rounded-full transition-all duration-200 shadow-sm hover:bg-gray-50">
-                <FaChevronRight className="w-4 h-4 text-emerald-600" />
-              </button>
-            </div>
           </div>
         </div>
+        </div>
+
       </div>
 
       <style jsx>{`
         .testimonial-swiper {
           padding: 0 60px;
         }
-
+        
         @media (max-width: 640px) {
           .testimonial-swiper {
             padding: 0;
@@ -195,7 +198,7 @@ const ClientSatisfaction = ({
         }
 
         .swiper-pagination-bullet-active-custom {
-          background: #0b8468;
+          background: #0B8468;
           transform: scale(1.2);
         }
 

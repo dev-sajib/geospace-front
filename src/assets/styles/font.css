@@ -1,0 +1,93 @@
+/* global front setup  */
+* {
+   font-family: "Poppins", sans-serif;
+}
+
+body {
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   overflow-x: hidden;
+}
+
+/* Heading Styles - Poppins Medium */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: "Poppins", sans-serif;
+}
+
+/* Paragraph Styles - Poppins Regular */
+p {
+   font-family: "Poppins", sans-serif;
+}
+
+/* Button Styles */
+button {
+   font-family: "Poppins", sans-serif;
+}
+
+/* Input Styles */
+input,
+textarea,
+select {
+   font-family: "Poppins", sans-serif;
+}
+
+.g-h1 {
+   font-size: calc(1.875rem + ((1vw - 4.2px) * 2)); /* ~60px at 1920px */
+   line-height: 1.3em;
+   font-weight: 600; /* semi-bold */
+}
+
+.g-h2 {
+   font-size: calc(1.5rem + ((1vw - 4.2px) * 1.6)); /* ~48px at 1920px */
+   line-height: 1.4em;
+   font-weight: 500; /* medium */
+}
+
+.g-p2 {
+   font-size: calc(1rem + ((1vw - 4.2px) * 0.2667)); /* ~20px at 1920px */
+   line-height: 1.5em;
+   font-weight: 400; /* normal */
+}
+
+.g-title {
+   font-size: calc(1rem + ((1vw - 4.2px) * 0.2667)); /* ~20px at 1920px */
+   line-height: 1.5em;
+   font-weight: 500; /* medium */
+}
+
+.g-semibold-20 {
+   font-size: calc(1rem + ((1vw - 4.2px) * 0.2667)); /* ~20px at 1920px */
+   line-height: 1.5em;
+   font-weight: 500; /* medium */
+}
+
+.g-24 {
+   font-size: calc(1.125rem + ((1vw - 4.2px) * 0.4)); /* ~24px at 1920px */
+   line-height: 1.5em;
+   font-weight: 400; /* normal */
+}
+
+.g-medium-24 {
+   font-size: calc(1.125rem + ((1vw - 4.2px) * 0.4)); /* ~24px at 1920px */
+   line-height: 1.5em;
+   font-weight: 500; /* normal */
+}
+
+.g-16 {
+   font-size: calc(0.875rem + ((1vw - 4.2px) * 0.1333)); /* ~16px at 1920px */
+   line-height: 1.5em;
+   font-weight: 400; /* normal */
+}
+
+.g-15 {
+   font-size: calc(0.8125rem + ((1vw - 4.2px) * 0.1333)); /* ~15px at 1920px */
+   line-height: 1.5em;
+   font-weight: 400; /* normal */
+}
+
+/* global front setup end */

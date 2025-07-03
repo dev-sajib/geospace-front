@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "backgroundImage": "/images/choose-ge1.jpg",
+    "title": "Watch Now",
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    "id": 2,
+    "backgroundImage": "/images/choose-ge1.jpg",
+    "title": "Watch Now",
+    "videoUrl": "https://www.youtube.com/embed/FWjAbqBWT3k"
+  },
+  {
+    "id": 3,
+    "backgroundImage": "/images/choose-ge1.jpg",
+    "title": "Watch Now",
+    "videoUrl": "https://www.youtube.com/embed/jNQXAC9IVRw"
+  },
+  {
+    "id": 4,
+    "backgroundImage": "/images/choose-ge1.jpg",
+    "title": "Watch Now",
+    "videoUrl": "https://www.youtube.com/embed/9bZkp7q19f0"
+  },
+  {
+    "id": 5,
+    "backgroundImage": "/images/choose-ge2.jpg",
+    "title": "Watch Now",
+    "videoUrl": "https://www.youtube.com/embed/ScMzIvxBSi4"
+  },
+  {
+    "id": 6,
+    "backgroundImage": "/images/choose-ge2.jpg",
+    "title": "Watch Now",
+    "videoUrl": "https://www.youtube.com/embed/kJQP7kiw5Fk"
+  },
+  {
+    "id": 7,
+    "backgroundImage": "/images/choose-ge2.jpg",
+    "title": "Watch Now",
+    "videoUrl": "https://www.youtube.com/embed/L_jWHffIx5E"
+  },
+  {
+    "id": 8,
+    "backgroundImage": "/images/choose-ge2.jpg",
+    "title": "Watch Now",
+    "videoUrl": "https://www.youtube.com/embed/y6120QOlsfU"
+  }
+]

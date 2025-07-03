@@ -1,0 +1,149 @@
+{
+  "teams": {
+    "geoEspaceTeam": {
+      "creative": [
+        {
+          "id": 1,
+          "name": "Zane Sorell",
+          "image": "/images/TeamMemberTwo.png",
+          "verified": "Verified Expert In Mining",
+          "experience": "15+ Yrs Experience",
+          "rating": 5,
+          "description": "This is Henery Marcel. I have been in cool Mining more than 10 years successfully. I love to work in this industry so much. I am open to work for freelancer or full time."
+        },
+        {
+          "id": 2,
+          "name": "Jane Doe",
+          "image": "/images/TeamMemberOne.png",
+          "verified": "Verified Expert In Geology",
+          "experience": "12+ Yrs Experience",
+          "rating": 4,
+          "description": "Experienced geologist with a passion for sustainable resource management and exploration, ready to tackle new challenges."
+        },
+        {
+          "id": 3,
+          "name": "John Smith",
+          "image": "/images/TeamMemberOne.png",
+          "verified": "Geospatial Analyst",
+          "experience": "8+ Yrs Experience",
+          "rating": 5,
+          "description": "Specializing in spatial data analysis and visualization to support mining and environmental projects."
+        },
+        {
+          "id": 4,
+          "name": "Emily White",
+          "image": "/images/TeamMemberTwo.png",
+          "verified": "Resource Geologist",
+          "experience": "10+ Yrs Experience",
+          "rating": 5,
+          "description": "Expert in mineral resource estimation and geological modeling, ensuring accuracy and compliance."
+        },
+        {
+          "id": 5,
+          "name": "Michael Green",
+          "image": "/images/TeamMemberOne.png",
+          "verified": "Exploration Manager",
+          "experience": "18+ Yrs Experience",
+          "rating": 4,
+          "description": "Leading successful exploration campaigns from grassroots to advanced-stage projects across the globe."
+        },
+        {
+          "id": 6,
+          "name": "Sarah Black",
+          "image": "/images/TeamMemberTwo.png",
+          "verified": "Data Scientist",
+          "experience": "7+ Yrs Experience",
+          "rating": 5,
+          "description": "Applying machine learning and advanced analytics to optimize exploration and mining operations."
+        }
+      ],
+      "environment": [
+        {
+          "id": 7,
+          "name": "Dr. Alan Grant",
+          "image": "/images/TeamMemberOne.png",
+          "verified": "Environmental Scientist",
+          "experience": "20+ Yrs Experience",
+          "rating": 5,
+          "description": "Leading expert in environmental impact assessments and reclamation strategies for large-scale mining operations."
+        },
+        {
+          "id": 8,
+          "name": "Dr. Ellie Sattler",
+          "image": "/images/TeamMemberTwo.png",
+          "verified": "Hydrogeologist",
+          "experience": "15+ Yrs Experience",
+          "rating": 5,
+          "description": "Specializes in groundwater modeling and water management solutions for the natural resources sector."
+        }
+      ],
+      "engineering": [
+        {
+          "id": 9,
+          "name": "Robert Muldoon",
+          "image": "/images/TeamMemberOne.png",
+          "verified": "Mining Engineer",
+          "experience": "16+ Yrs Experience",
+          "rating": 4,
+          "description": "Expert in mine planning, design, and operations optimization with a focus on safety and efficiency."
+        }
+      ],
+      "another": [
+        {
+          "id": 10,
+          "name": "Dr. Ian Malcolm",
+          "image": "/images/TeamMemberOne.png",
+          "verified": "Risk Assessment Specialist",
+          "experience": "22+ Yrs Experience",
+          "rating": 5,
+          "description": "Specialist in chaos theory and risk analysis, providing critical insights for project viability and safety protocols."
+        }
+      ]
+    },
+    "geoEspaceAdvanced": {
+      "specialists": [
+        {
+          "id": 11,
+          "name": "John Hammond",
+          "image": "/images/TeamMemberTwo.png",
+          "verified": "Chief Project Visionary",
+          "experience": "30+ Yrs Experience",
+          "rating": 5,
+          "description": "Visionary leader with decades of experience in funding and managing ambitious, large-scale resource projects."
+        },
+        {
+          "id": 12,
+          "name": "Ray Arnold",
+          "image": "/images/TeamMemberOne.png",
+          "verified": "Lead Systems Engineer",
+          "experience": "25+ Yrs Experience",
+          "rating": 4,
+          "description": "Hold on to your butts. Manages complex operational systems and infrastructure for high-stakes projects."
+        }
+      ]
+    }
+  },
+  "hiringProcess": [
+    {
+      "step": "01",
+      "title": "Share Requirements",
+      "description": "Let us know what skills, roles, or support you need."
+    },
+    {
+      "step": "02",
+      "title": "Get a Proposal",
+      "description": "We'll send you a tailored plan."
+    },
+    {
+      "step": "03",
+      "title": "Manage Your Team",
+      "description": "Launch your team and control every task as you like."
+    }
+  ],
+  "subTabs": [
+    { "id": "creative", "label": "GeoEspace Team" },
+    { "id": "environment", "label": "Environment Team" },
+    { "id": "engineering", "label": "Engineering Team" },
+    { "id": "another", "label": "Doctor Team" }
+  ]
+}
