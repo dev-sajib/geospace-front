@@ -8,15 +8,16 @@ export const FreelancerCard = ({
   isActive,
   profileLink,
   enableOverlayOnHover = false,
+  disableBoxShadowOnHover = true,
   overlayText = "View Profile",
   enableBorderOnHover = true,
 }) => {
   return (
     <div
       onClick={() => (window.location.href = profileLink)}
-      className={`bg-white rounded-xl ${
+      className={`w-full bg-white rounded-xl ${
         isActive ? "border-1 border-emerald-600" : "border-0 border-transparent"
-      } shadow-[2px_5px_50px_rgba(0,0,0,0.1)] hover:shadow-none ${
+      } shadow-[2px_5px_20px_rgba(0,0,0,0.1)] ${disableBoxShadowOnHover && "hover:shadow-none"} ${
         enableBorderOnHover ? "hover:border-emerald-600 hover:border-1" : ""
       } transition-all duration-300  flex flex-col cursor-pointer my-3 group`}
     >
@@ -35,25 +36,25 @@ export const FreelancerCard = ({
         </div>
       </div>
       <div className="flex-grow flex flex-col p-4 md:p-6">
-        <div className="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
+        <div className="g-semibold-20 text-gray-900 mb-2 line-clamp-2">
           {name}
         </div>
         <div className="flex items-center mb-3">
-          <img src="/svg/image 6.svg" alt={serviceCategory} />
+          <img src="/images/image 6.svg" alt={serviceCategory} />
           <div
-            className="font-poppins font-normal text-[15px] leading-none tracking-normal"
+            className="font-poppins font-normal g-15 leading-none tracking-normal"
             style={{ color: "#21DC1E" }}
           >
             Verified Expert in {serviceCategory}
           </div>
         </div>
-        <div className="#0D0D0D mb-4 text-sm sm:text-base line-clamp-2 flex-grow font-medium">
+        <div className="#0D0D0D mb-4 g-15 line-clamp-2 flex-grow font-normal">
           {role}
         </div>
-        <div className="text-xs sm:text-sm text-gray-500 mt-auto">
-          <p className="mb-1 font-medium">PREVIOUSLY AT</p>
-          <p className="font-medium text-gray-700 line-clamp-2">
-            <strong>{previousCompany}</strong> {companyName}
+        <div className="g-15 text-gray-300 mt-auto">
+          <p className="mb-1 font-normal">PREVIOUSLY AT</p>
+          <p className="g-15 text-gray-700 line-clamp-2">
+            <strong className="g-title">{previousCompany}</strong> {companyName}
           </p>
         </div>
       </div>

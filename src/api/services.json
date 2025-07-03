@@ -3,7 +3,7 @@
     "id": "electrician",
     "name": "Electrician",
     "icon": {
-      "src": "/svg/electrician.svg",
+      "src": "/images/electrician.svg",
       "alt": "Electrician"
     }
   },
@@ -11,7 +11,7 @@
     "id": "environment-specialist",
     "name": "Environment Specialist",
     "icon": {
-      "src": "/svg/env-sp.svg",
+      "src": "/images/env-sp.svg",
       "alt": "Environment Specialist"
     }
   },
@@ -19,7 +19,7 @@
     "id": "petroleum-expert",
     "name": "Petroleum Expert",
     "icon": {
-      "src": "/svg/petroleum.svg",
+      "src": "/images/petroleum.svg",
       "alt": "Petroleum Expert"
     }
   },
@@ -27,7 +27,7 @@
     "id": "technician",
     "name": "Technician",
     "icon": {
-      "src": "/svg/technician.svg",
+      "src": "/images/technician.svg",
       "alt": "Technician"
     }
   },
@@ -35,7 +35,7 @@
     "id": "miner",
     "name": "Miner",
     "icon": {
-      "src": "/svg/miner.svg",
+      "src": "/images/miner.svg",
       "alt": "Miner"
     }
   },
@@ -43,7 +43,7 @@
     "id": "engineer",
     "name": "Engineer",
     "icon": {
-      "src": "/svg/engineer.svg",
+      "src": "/images/engineer.svg",
       "alt": "Engineer"
     }
   },
@@ -51,7 +51,7 @@
     "id": "geologist",
     "name": "Geologist",
     "icon": {
-      "src": "/svg/geologist.svg",
+      "src": "/images/geologist.svg",
       "alt": "Geologist"
     }
   }

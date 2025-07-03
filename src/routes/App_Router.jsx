@@ -12,6 +12,13 @@ import Home_Page from "../pages/website/Home/Home_Page";
 import Protected_Route from "./Protected_Route";
 import Role_Based_Route from "./Role_Based_Route";
 import Not_Found_Page from "../components/layout/Not_Found_Page";
+import Top5_Page from "../pages/website/Top5Page/Top5_Page.jsx";
+import HireTeam from "../pages/website/HireTeam/HireTea_Page.jsx";
+import ConsultingServices_Page from "../pages/website/ConsultingServicesPage/ConsultingServices_Page.jsx";
+import Clients_Page from "../pages/website/ClientsPage/Clients_Page.jsx";
+import Blog_Page from "../pages/website/BlogPage/Blog_Page.jsx";
+import About_Page from "../pages/website/AboutPage/About_Page.jsx";
+import HireTalentPage from "../pages/website/HireTalentPage/HireTalent_Page.jsx";
 
 const Placeholder_Page = ({ title }) => (
   <div className="text-center p-20">
@@ -28,32 +35,32 @@ const App_Router = () => {
 
         <Route
           path={ROUTE_PATHS.TOP_5}
-          element={<Placeholder_Page title="Top 5% Page" />}
+          element={<Top5_Page  />}
         />
         <Route
           path={ROUTE_PATHS.HIRE_TEAM}
-          element={<Placeholder_Page title="Hire a Team Page" />}
+          element={<HireTeam  />}
         />
         <Route
           path={ROUTE_PATHS.CONSULTING_SERVICES}
-          element={<Placeholder_Page title="Consulting & Service Page" />}
+          element={<ConsultingServices_Page title="Consulting & Service Page" />}
         />
         <Route
           path={ROUTE_PATHS.CLIENTS}
-          element={<Placeholder_Page title="Clients Page" />}
+          element={<Clients_Page title="Clients Page" />}
         />
         <Route
           path={ROUTE_PATHS.BLOG}
-          element={<Placeholder_Page title="Blog Page" />}
+          element={<Blog_Page title="Blog Page" />}
         />
         <Route
           path={ROUTE_PATHS.ABOUT_US}
-          element={<Placeholder_Page title="About Us Page" />}
+          element={<About_Page title="About Us Page" />}
         />
 
         <Route
           path="/hire/:talent"
-          element={<Placeholder_Page title="Hire Talent Page" />}
+          element={<HireTalentPage title="Hire Talent Page" />}
         />
 
         <Route
