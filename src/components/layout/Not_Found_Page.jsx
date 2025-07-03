@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ROUTE_PATHS } from "../constants/route_paths";
+import { ROUTE_PATHS } from "../../constants/route_paths";
 
 const Not_Found_Page = () => {
   return (

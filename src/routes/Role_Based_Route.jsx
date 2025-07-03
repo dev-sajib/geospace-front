@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { Navigate, Outlet } from "react-router-dom";
-import Not_Found_Page from "../pages/Not_Found_Page";
+import Not_Found_Page from "../components/layout/Not_Found_Page";
 
 const Role_Based_Route = ({ allowed_roles }) => {
   const { role } = useSelector((state) => state.auth);

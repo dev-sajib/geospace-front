@@ -8,10 +8,10 @@ import Dashboard_Not_Found_Page from "../components/layout/Dashboard_Not_Found_P
 import Dashboard_Layout from "../layouts/Dashboard_Layout";
 import Admin_Dashboard_Page from "../pages/admin/Admin_Dashboard_Page";
 import Login_Page from "../pages/auth/Login_Page";
-import Not_Found_Page from "../pages/Not_Found_Page";
 import Home_Page from "../pages/website/Home/Home_Page";
 import Protected_Route from "./Protected_Route";
 import Role_Based_Route from "./Role_Based_Route";
+import Not_Found_Page from "../components/layout/Not_Found_Page";
 
 const Placeholder_Page = ({ title }) => (
   <div className="text-center p-20">
