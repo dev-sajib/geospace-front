@@ -43,9 +43,9 @@ const Dashboard_Header = () => {
             className="flex items-center space-x-3 cursor-pointer p-2 rounded-lg hover:bg-gray-100"
           >
             <img
-              src={user?.ProfilePictureUrl || "/images/avatar-1.jpg"}
+              src={user?.ProfilePictureUrl || "/images/userIcon.png"}
               alt="User Avatar"
-              className="h-10 w-10 rounded-full object-cover"
+              className="h-10 w-10 rounded-full object-cover bg-gray-400"
             />
             <div className="hidden md:block">
               <p className="font-semibold text-sm text-gray-900">

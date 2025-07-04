@@ -6,7 +6,6 @@ import Main_Layout from "../layouts/Main_Layout";
 
 import Dashboard_Not_Found_Page from "../components/layout/Dashboard_Not_Found_Page";
 import Dashboard_Layout from "../layouts/Dashboard_Layout";
-import Admin_Dashboard_Page from "../pages/admin/Admin_Dashboard_Page";
 import Login_Page from "../pages/auth/Login_Page";
 import Home_Page from "../pages/website/Home/Home_Page";
 import Protected_Route from "./Protected_Route";
@@ -19,6 +18,7 @@ import Clients_Page from "../pages/website/ClientsPage/Clients_Page.jsx";
 import Blog_Page from "../pages/website/BlogPage/Blog_Page.jsx";
 import About_Page from "../pages/website/AboutPage/About_Page.jsx";
 import HireTalentPage from "../pages/website/HireTalentPage/HireTalent_Page.jsx";
+import Total_Active_Users_Page from "../pages/admin/Total_Active_Users_Page.jsx";
 
 const Placeholder_Page = ({ title }) => (
   <div className="text-center p-20">
@@ -33,17 +33,13 @@ const App_Router = () => {
       <Route element={<Main_Layout />}>
         <Route path={ROUTE_PATHS.HOME} element={<Home_Page />} />
 
-        <Route
-          path={ROUTE_PATHS.TOP_5}
-          element={<Top5_Page  />}
-        />
-        <Route
-          path={ROUTE_PATHS.HIRE_TEAM}
-          element={<HireTeam  />}
-        />
+        <Route path={ROUTE_PATHS.TOP_5} element={<Top5_Page />} />
+        <Route path={ROUTE_PATHS.HIRE_TEAM} element={<HireTeam />} />
         <Route
           path={ROUTE_PATHS.CONSULTING_SERVICES}
-          element={<ConsultingServices_Page title="Consulting & Service Page" />}
+          element={
+            <ConsultingServices_Page title="Consulting & Service Page" />
+          }
         />
         <Route
           path={ROUTE_PATHS.CLIENTS}
@@ -96,7 +92,7 @@ const App_Router = () => {
           <Route element={<Role_Based_Route allowed_roles={["Admin"]} />}>
             <Route
               path={ROUTE_PATHS.ADMIN_DASHBOARD}
-              element={<Admin_Dashboard_Page />}
+              element={<Total_Active_Users_Page />}
             />
             <Route path="*" element={<Dashboard_Not_Found_Page />} />
           </Route>
